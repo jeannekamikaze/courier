@@ -31,7 +31,7 @@ public:
         printf("Received foo: a %d, b %f\n", foo->a, foo->b);
     }
 
-    void onEvent (const Bar* bar)
+    void onEvent (const Bar* bar) override
     {
         printf("Received bar: x %f\n", bar->x);
     }
